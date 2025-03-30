@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: .1rem 1rem;
+    background-color: #ded8d4;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+a{
+    text-decoration: none;
+}
+.home-int{
+    background-image: linear-gradient(rgba(46,46,46,0.93),rgba(46,46,46,0.95)),url(img/bg-hero.jpg);
+    border-radius: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #2e2e2e;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #a82321;
+    
+}
+.logo h2{
+    margin: 0 0.5rem;
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+}
+.logo i{
+    font-size: 2rem;
+}
+.head-nav a{
+    margin: 0 0.5rem;
+    color: #ded8d4;
+}
+.head-nav a button{
+    font-size: .9rem;
+    padding: .9rem 1.2rem;
+    color: #ded8d4;
+    background-color: #a82321;
+    border: none;
+    border-radius: .7rem;
+    transition: 0.4s linear 0s;
+}
+.intfc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+}
+.r-dish{
+    width: 40%;
+    animation: round  25s linear  infinite;
+    box-shadow: 0 0 50px #a82321;
+    border-radius: 50%;
+}
+.abt{
+    color: #ded8d4;
+    width: 50%;
+}
+.abt h3{
+    font-size: 4rem;
+    margin: 0.5rem 0.5rem .5em;
+}
+.abt p{
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0.5rem 0.5rem 2em;
+}
+.abt a button{
+    font-size: 1rem;
+    padding: 1.5rem 2.2rem;
+    color: #ded8d4;
+    background-color: #a82321;
+    border: none;
+    border-radius: .7rem;
+    transition: 0.4s linear 0s;
+}
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+button:hover{
+    box-shadow: 0 0 15px #ded8d4;
+    transform: scale(1.05);
+}
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n-box{
+    box-shadow: 0 0 10px #c4bab4;
+    margin: 1em 0.5em;
+    padding: 1em;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+}
+.n-box i{
+    font-size: 3rem;
+    color: #a82321 ;
+    margin: 0.5em 0.1em;
+    transition: 0.3s ease-in;
+    
+}
+.n-box h4{
+    font-size: 2rem;
+    margin: 0.5em 0.1rem;
+}
+.n-box p{
+    margin: 1em 0.1rem;
+    opacity: 0.8;
+}
+.n-box:hover{
+    background-color: #a82321;
+    color: #ded8d4;
+}
+.n-box:hover i{
+    color: #ded8d4;
+}
+
+
