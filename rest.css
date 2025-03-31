@@ -12,21 +12,24 @@ body{
 }
 a{
     text-decoration: none;
+    color: #2e2e2e;;
 }
 button:hover{
     box-shadow: 0 0 15px #851c1b;
     transform: scale(1.05);
 }
-.home-int{
+ /* here head and home interface code start */
+.home-head{
     background-image: linear-gradient(rgba(46,46,46,0.93),rgba(46,46,46,0.95)),url(img/bg-hero.jpg);
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
+/*header code*/
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
     background-color: #2e2e2e;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -36,8 +39,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    color: #c72b28;
-    
+    color: #c72b28; 
 }
 .logo h2{
     margin: 0 0.5rem;
@@ -47,57 +49,57 @@ button:hover{
 .logo i{
     font-size: 2rem;
 }
-.head-nav a{
+.head-navs a{
     margin: 0 0.5rem;
     color: #f8ebe0;
 }
-.head-nav a button{
+.head-navs button{
     font-size: .9rem;
     padding: .9rem 1.2rem;
-    color: #f8ebe0;
-    background-color: #c72b28;
     border: none;
     border-radius: .7rem;
+    color: #f8ebe0;
+    background-color: #c72b28;
     transition: 0.4s linear 0s;
 }
-.intfc{
+/*Home Interface*/
+.home-front{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 6rem 2rem;
 }
-.r-dish{
+.txt-home{
+    color: #f8ebe0;
+    width: 50%;
+}
+.txt-home h3{
+    font-size: 4rem;
+    margin: 0.5rem 0.5rem .5em;
+}
+.txt-home p{
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem 2em;
+    line-height: 1.5em;
+}
+.txt-home button{
+    font-size: 1rem;
+    padding: 1.5rem 2.2rem;
+    border: none;
+    border-radius: .7rem;
+    color: #f8ebe0;
+    background-color: #c72b28;
+    transition: 0.4s linear 0s;
+}
+.home-dish{
     width: 40%;
     animation: round  25s linear  infinite;
     box-shadow: 0 0 50px #6a1817;
     border-radius: 50%;
 }
-.r-dish img{
+.home-dish img{
     width: 100%;
-}
-.abt{
-    color: #f8ebe0;
-    width: 50%;
-}
-.abt h3{
-    font-size: 4rem;
-    margin: 0.5rem 0.5rem .5em;
-}
-.abt p{
-    font-size: 1rem;
-    opacity: 0.9;
-    margin: 0.5rem 0.5rem 2em;
-    line-height: 1.5em;
-}
-.abt a button{
-    font-size: 1rem;
-    padding: 1.5rem 2.2rem;
-    color: #f8ebe0;
-    background-color: #c72b28;
-    border: none;
-    border-radius: .7rem;
-    transition: 0.4s linear 0s;
 }
 @keyframes round{
     0%{
@@ -107,13 +109,16 @@ button:hover{
         transform: rotate(360deg);
     }
 }
-.nav-box{
+
+
+
+.sec2-servs{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
-.n-box{
+.servs-card{
     box-shadow: 0 0 10px #c4bab4;
     margin: 1em 0.5em;
     padding: 1em;
@@ -121,26 +126,25 @@ button:hover{
     font-size: 1.5rem;
     transition: 0.3s ease-in;
 }
-.n-box i{
+.servs-card i{
     font-size: 3rem;
     color: #c72b28 ;
     margin: 0.5em 0.1em;
     transition: 0.3s ease-in;
-    
 }
-.n-box h4{
+.servs-card h4{
     font-size: 2rem;
     margin: 0.5em 0.1rem;
 }
-.n-box p{
+.servs-card p{
     margin: 1em 0.1rem;
     opacity: 0.8;
 }
-.n-box:hover{
+.servs-card:hover{
     background-color: #c72b28;
     color: #f8ebe0;
 }
-.n-box:hover i{
+.servs-card:hover i{
     color: #f8ebe0;
 }
 
@@ -188,25 +192,25 @@ button:hover{
     align-self: self-start;
     
 }
-.into-abt{
+.about-intro{
     width: 60%;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.txt-abt h5{
+.txt-introt h5{
     font-size: 1.7rem;
     color: #c72b28;
 }
-.txt-abt h3 i{
+.txt-introt h3 i{
     color: #c72b28;
 }
-.txt-abt h3{
+.txt-introt h3{
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
-.txt-abt p{
+.txt-introt p{
     margin-bottom: 1.5rem;
     padding: 0 3rem 0 0;
 }
@@ -215,7 +219,6 @@ button:hover{
     align-items: flex-start;
     margin-bottom: 2rem;
 }
-
 .cnt-eff p{
     
     margin: 0 5rem 0 0.5rem;
@@ -236,6 +239,10 @@ button:hover{
     border-radius: .7rem;
     transition: 0.4s linear 0s;
 }
+
+
+
+
 .food-menu{
     display: flex;
     flex-direction: column;
@@ -322,6 +329,7 @@ button:hover{
 .booking{
     display: flex;
     border-radius: 1rem;
+    margin-bottom: 1.5rem;
 }
 .int-vid{
     width: 50%;
@@ -404,4 +412,81 @@ button:hover{
     border: none;
     border-radius: .7rem;
     transition: 0.4s linear 0s;
+}
+
+
+
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.txt-team{
+    height: 20%;
+}
+.txt-team h5{
+    font-size: 1.5rem;
+    color: #c72b28;
+    text-align: center;
+}
+.txt-team h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.team-cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.cards{
+    height: 400px;
+    width: 18%;
+    margin: 1rem;
+    box-shadow: 0 0 10px #c4bab4;
+    padding: 1em;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards img{
+    width: 80%;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.chef-med{
+    display: flex;
+}
+.chef-med .icon{
+    margin-right: .5rem;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt-rev h5{
+    font-size: 1.7rem;
+    color: #c72b28;
+    text-align: center;
+}
+.txt-rev h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.gvn-revs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.rev-card{
+    width: 70%;
+    height: 100px;
+    margin: 1rem;
 }
